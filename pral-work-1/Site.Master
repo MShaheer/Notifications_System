@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="pral_work_1.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Notifications Management</title>
+
+    <link rel="stylesheet" href="../css/master_style.css" type="text/css" media="screen" />
+    <script src="scripts/jquery-1.7.1.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header id="header">Notifications Management</header>
+            <asp:Button ID="logout" runat="server" Text="Logout" OnClick="logout_Click" />
+            <asp:Button ID="login" runat="server" Text="Login" OnClick="login_Click" />
+            <div id="linkdiv">
+                <ul>
+                    <li><a href="index.aspx" class="links" id="home-link">HOME</a>&nbsp;</li>
+                    <li><a href="user_notification.aspx" class="links" id="notif-link">USERS NOTIFICATION</a>&nbsp;</li>
+                    <li><a href="#" class="links" id="about-link">ABOUT</a>&nbsp;</li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
